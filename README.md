@@ -32,10 +32,41 @@ Normalizing the data
 Splitting the data into test and train
 
 ##PROGRAM:
-/Write your code here/
+### developed by: D.Amarnath Reddy
+### registration no:212221240012
+import pandas as pd
+df=pd.read_csv("/content/Churn_Modelling.csv")
+df.head()
+df.isnull().sum()
+df.drop(["RowNumber","Age","Gender","Geography","Surname"],inplace=True,axis=1)
+print(df)
+x=df.iloc[:,:-1].values
+y=df.iloc[:,-1].values
+print(x)
+print(y)
+from sklearn.preprocessing import MinMaxScaler
+scaler = MinMaxScaler()
+df1 = pd.DataFrame(scaler.fit_transform(df))
+print(df1)
+from sklearn.model_selection import train_test_split
+xtrain,ytrain,xtest,ytest=train_test_split(x,y,test_size=0.2,random_state=2)
+print(xtrain)
+print(len(xtrain))
+print(xtest)
+print(len(xtest))
+from sklearn.preprocessing import StandardScaler
+sc = StandardScaler()
+df1 = sc.fit_transform(df)
+print(df1)
 
 ##OUTPUT:
-/ Show the result/
+<img width="922" alt="NN1" src="https://user-images.githubusercontent.com/94165103/190445363-a2fb7ec2-fb3b-4de4-84d9-22245626aa9c.png">
+
+<img width="475" alt="NN2" src="https://user-images.githubusercontent.com/94165103/190445436-f4c07660-a0dc-4e2e-af1e-6779cb6cac28.png">
+
+<img width="485" alt="NN3" src="https://user-images.githubusercontent.com/94165103/190445503-7a01b2f4-26d0-456b-b005-f0090d7eada1.png">
+
+<img width="439" alt="NN4" src="https://user-images.githubusercontent.com/94165103/190445596-9aea15e7-8683-4a1f-b7e3-386f7791fe7f.png">
 
 ##RESULT
-/Type your result here/
+Thus the above program for standardizing the given data was implemented successfully.
