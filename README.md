@@ -34,6 +34,7 @@ Splitting the data into test and train
 ##PROGRAM:
 ### developed by: D.Amarnath Reddy
 ### registration no:212221240012
+```
 import pandas as pd
 df=pd.read_csv("/content/Churn_Modelling.csv")
 df.head()
@@ -58,6 +59,7 @@ from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 df1 = sc.fit_transform(df)
 print(df1)
+```
 
 ##OUTPUT:
 
