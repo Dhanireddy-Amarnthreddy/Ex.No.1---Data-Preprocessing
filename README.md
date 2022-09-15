@@ -60,6 +60,8 @@ df1 = sc.fit_transform(df)
 print(df1)
 
 ##OUTPUT:
+
+
 <img width="922" alt="NN1" src="https://user-images.githubusercontent.com/94165103/190445363-a2fb7ec2-fb3b-4de4-84d9-22245626aa9c.png">
 
 <img width="475" alt="NN2" src="https://user-images.githubusercontent.com/94165103/190445436-f4c07660-a0dc-4e2e-af1e-6779cb6cac28.png">
