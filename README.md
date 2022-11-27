@@ -72,5 +72,5 @@ print(df1)
 
 <img width="439" alt="NN4" src="https://user-images.githubusercontent.com/94165103/190445596-9aea15e7-8683-4a1f-b7e3-386f7791fe7f.png">
 
-##RESULT
+## RESULT
 Thus the above program for standardizing the given data was implemented successfully.
